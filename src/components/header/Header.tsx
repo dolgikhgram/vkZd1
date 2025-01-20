@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
+        <div style={{marginBottom:'30px'}}>
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static">
                     <Toolbar>

@@ -1,16 +1,16 @@
 {
   "name": "catsproject",
+  "homepage": "http://dolgikhgram.github.io/vkZd1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://dolgikhgram.github.io/vkZd1",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

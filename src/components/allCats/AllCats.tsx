@@ -2,7 +2,7 @@ import Cats from "../cats/Cats.tsx";
 import InfiniteScroll from "react-infinite-scroller";
 import {useState} from "react";
 import {CatsType} from "../../types/types.ts";
-import {Grid2, Typography} from "@mui/material";
+import { Typography} from "@mui/material";
 
 type AllCatsPropsType = {
     setCats: (data:Array<CatsType>) => void
@@ -26,14 +26,14 @@ const AllCats = ({cats,setCats,addFavoritesCats,favoritesCats}: AllCatsPropsType
     return (
         <div>
             <InfiniteScroll
-                style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 4, marginTop: 15}}
+                style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: 4, marginTop: 15, position:'relative'}}
                 loadMore={loadMore}
                 hasMore={hasMore}
                 pageStart={0}
                 loader={
-                <Grid2 container>
-                    <Typography>...загружаем ещё котиков...</Typography>
-                </Grid2>
+                    <div style={{position:"absolute", bottom:0, left: '45%'}}>
+                        <Typography>...загружаем ещё котиков...</Typography>
+                    </div>
                 }
             >
                 {
