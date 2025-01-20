@@ -2,6 +2,7 @@
   "name": "catsproject",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dolgikhgram.github.io/vkZd1",
   "type": "module",
   "scripts": {
     "dev": "vite",
